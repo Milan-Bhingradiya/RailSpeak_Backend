@@ -47,6 +47,11 @@ export const langTranslation = async (req, res, next) => {
         console.log(langTranslations);
         const URL = await textToSpeech(body, res, next, langTranslations);
 
+        console.log("URL value");
+        console.log(URL)
+        console.log(URL)
+        console.log(URL)
+        console.log(URL)
         const newPresets = new Presets({
             title: body.title,
             tag: body.tag,
